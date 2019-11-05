@@ -544,7 +544,8 @@ table th {
     display: none;
   }
   body,html{
-    min-width: 600px;
+    /* min-width: 400px; */
+    /* padding: 0 10px; */
   } 
   .container{
     max-width: 450px;
