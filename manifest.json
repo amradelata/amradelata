@@ -1,0 +1,11 @@
+{
+  "name": "AMR | front end developer",
+  "short_name": "Amr Adel Ata",
+  "theme_color": "#ffcd34",
+  "background_color": "#263b80",
+  "display": "standalone",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
+  "splash_pages": null
+}
