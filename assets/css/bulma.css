@@ -508,7 +508,7 @@ table th {
 .is-size-7 {
   font-size: 0.75rem !important;
 }
-
+/* phone */
 @media screen and (max-width: 768px) {
 
   .is-size-1-mobile {
@@ -543,25 +543,51 @@ table th {
   .shap-4{
     display: none;
   }
-  body,html{
-    /* min-width: 400px; */
-    /* padding: 0 10px; */
-  } 
+
   .container{
-    max-width: 450px;
     text-align: center;
   }
-  .my-buttons {
-    top: 35px !important; 
+  .downloadCvBtn{
+    width: 100px !important;
+    font-size: 13px;
   }
+  .my-buttons {
+    top: 40px !important; 
+    right: 10px !important;
+     }
+     .logo {
+       left: -40px !important;
+     }
+     .whatIOffer{
+           margin-top: 0 !important;
+            margin-bottom: 100px !important;
+     }
+     .my-title{
+       font-size: 40px !important;
+     }
+     .subtitle{
+       font-size: 1rem !important;
+        font-weight: 100 !important;
+     }
+     .aboutSection{
+        padding: 50px 20px !important;
+        margin-bottom: 100px!important;
+     }
+     .padding{
+       padding: 0 20px;
+     }
+  /* .my-content{
+    margin-top: 50px;
+  } */
+
   .myProject{
     background: transparent !important;
   }
-  .top-button{
+  /* .top-button{
     top: 0!important;
     right: 0!important;
     left: 0!important;
-  }
+  } */
   .main-card{
     height: 100vh !important;
     top: 95px!important;
@@ -574,18 +600,18 @@ table th {
     /* height: 100vh !important; */
     /* width: 100% !important; */
   }
-  .top-button button{
+  /* .top-button button{
     margin: 0 9px !important;
     font-size: 20px !important;
     font-weight: bold;
-  }
-  .cntact {
+  } */
+  .contact {
     margin-top: 100px;
     /* padding: 0 10px !important; */
   }
-  .myEmail{
+  /* .myEmail{
     margin: 20px
-  }
+  } */
 
   /* aboutSection */
   .aboutSection img{

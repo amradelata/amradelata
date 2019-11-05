@@ -1,6 +1,13 @@
-body{
-  /* height: 400vh; */
-  /* font-family: "Montserrat",sans-serif; */
+body,html{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+  font-weight: 400;
 }
 /* scrolling */
 ::-webkit-scrollbar-track {
@@ -40,18 +47,19 @@ body{
 .content{
   text-align: center;
 }
-.main-color{
+.downloadCvBtn{
 
   background-color: #31475e;
   border-color: transparent;
   color: #fff;
+  width: 150px;
 }
-.main-color:hover{
+.downloadCvBtn:hover{
   color: #fff;
   outline: none;
 
 }
-.main-color:focus{
+.downloadCvBtn:focus{
   color: #fff;
   outline: none;
 }
@@ -71,7 +79,7 @@ body{
 .patreon-button{
     background-image: url('../img/icons/download.png');
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     width: 150px;
     outline: none;
 }
@@ -227,7 +235,7 @@ position: relative;
 
 
 /* contact */
-.cntact{
+.contact{
   position: relative;
   height: 100vh;
 }
