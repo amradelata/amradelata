@@ -14,17 +14,20 @@ body {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     border-radius: 10px;
     background-color: #F5F5F5;
+    
 }
 
 ::-webkit-scrollbar {
     width: 8px;
     background-color: #F5F5F5;
+    
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     background-color: #353b48;
+    
 }
 .my-title{
   font-size: 46px;
@@ -160,6 +163,8 @@ position: relative;
   padding: 50px;
 
 }
+
+
 .about{
   max-width: 1000px;
   text-align: center;
@@ -183,27 +188,31 @@ position: relative;
 /* about */
 
 /* myProject */
+
+.gitPtn{
+  display: none;
+}
 .myProject{
-  margin-top: 200px;
+  margin-bottom: 0;
   height: 100vh;
-  /* padding: 500px; */
-  /* background-image: url('../img/broject.svg'); */
   background-image: url('../img/labtoplanet.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
 }
-
+.phonePars{
+  display: none;
+}
 .top-button button{
-  margin: 0 35px;
+  margin: 10px 35px;
   background: transparent;
   font-size: 20px;
   outline: none;
   border: none;
   color: #dcdde1;
   }
-  
+
 .top-button button :hover{
   color: #dcdde1 !important;
 }
@@ -245,6 +254,15 @@ position: relative;
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
+}
+.myEmail{
+  font-size: 60px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.myEmail:hover{
+  color: #3273dc;
+  text-decoration: underline;
 }
 .btn{
   display: inline-block;
