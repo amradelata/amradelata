@@ -148,11 +148,18 @@ position: relative;
 
 /* whatIOffer */
 .whatIOffer{
-  /* height: 100vh;
-  padding: 0 !important;
-  margin: 0 !important; */
   margin-top: 300px;
   margin-bottom: 150px;
+}
+
+.whatIOfferCard{
+    box-shadow: 0 0 38px rgba(117, 117, 115, 0.3), 0 0 0 rgba(220, 235, 14, 0.22);
+    padding: 60px 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.whatIOfferCard .content{
+  text-align: left;
 }
 /* whatIOffer */
 
@@ -170,7 +177,7 @@ position: relative;
   text-align: center;
 }
 .about img{
-  width: 150px;
+  width: 200px;
   user-select: none;
 }
 .about .aboutContent{
@@ -193,32 +200,65 @@ position: relative;
   display: none;
 }
 .myProject{
-  margin-bottom: 0;
-  height: 100vh;
-  background-image: url('../img/labtoplanet.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
+height: 100vh;
+margin: 200px 100px 0 100px;
 }
-.phonePars{
-  display: none;
+
+.dark{
+    border-radius: 40px 40px 0 0;
+    background: #3F3D56;
+    padding: 20px 30px;
 }
-.top-button button{
-  margin: 10px 35px;
+
+.yalow{
+  background: #FFC107;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.tapyalow .top-button button{
+  width: 100%;
+  display: block;
+  padding: 50px 0;
   background: transparent;
   font-size: 20px;
   outline: none;
   border: none;
-  color: #dcdde1;
-  }
-
-.top-button button :hover{
-  color: #dcdde1 !important;
+  color: #3F3D56;
+  cursor: pointer;  
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);  
+}
+.tapyalow .top-button button:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);    
 }
 .active{
-  /* color: red !important; */
-  border-bottom: 1px solid #f1f1f1 !important;
+  border-bottom: 1px solid #000 !important;
+
+}
+.towTaps{
+  position: relative;
+}
+.tapyalow{
+    position: absolute;
+    left: 0;
+    width: 30%;
+    height: 90vh;
+    background: #FFC107;
+    display: inline-block;
+    border-radius: 0 0 0 40px;
+}
+.tapGray{
+    position: absolute;
+    height: 90vh;
+    right: 0;
+    width: 70%;
+    background: #e4e4e4;
+    display: inline-block;
+    border-radius: 0 0 40px 0;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .cards {
     display: flex;
@@ -230,19 +270,144 @@ position: relative;
 {
     flex-basis: calc(33.333% - 20px);
     display: inline-block;
-    /* background-color: #fff; */
     margin: 10px;
-    /* border-radius:15px;
-    overflow: hidden; */
+    overflow: hidden;
 }
 
-.my-card .content {
-    /* padding: 15px; */
-    /* background: #353b48; */
+.img{
+  height: 200px; 
+  background-size: cover;
+  background-position: center center; 
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin: 50px 0;
+}
+.frontend1{
+   background-image: url('/assets/img/myproject/frontendimg/1e-commercewith-vue-nuxt-vuex-vuetify-axios.jpg');
+}
+.frontend2{
+   background-image: url('/assets/img/myproject/frontendimg/2spacexApi.jpg');
+   /* border-radius: 50%; */
+}
+.frontend3{
+   background-image: url('/assets/img/myproject/frontendimg/3moviecinema.jpg');
+}
+.frontend4{
+   background-image: url('/assets/img/myproject/frontendimg/4egypt_cities.jpg');
+}
+.frontend5{
+   background-image: url('/assets/img/myproject/frontendimg/5vue-app-ecommerce-bootstrap.jpg');
+   /* border-radius: 50%; */
+}
+.uiUx1{
+   background-image: url('/assets/img/myproject/uiux/1profile.jpg');
+   /* border-radius: 50%;   */
+}
+.uiUx2{
+   background-image: url('/assets/img/myproject/uiux/2Responsive.PNG');
+   /* border-radius: 50%;   */
+}
+.uiUx3{
+   background-image: url('/assets/img/myproject/uiux/3Starnight.PNG');
+   /* border-radius: 50%;   */
+}
+.uiUx4{
+   background-image: url('/assets/img/myproject/uiux/43kod.PNG');
+   /* border-radius: 50%;   */
+}
+.uiUx5{
+   background-image: url('/assets/img/myproject/uiux/5Eclipse.png');
+   /* border-radius: 50%;   */
+}
+.uiUx6{
+   background-image: url('/assets/img/myproject/uiux/6Colingz.jpg');
+   /* border-radius: 50%;   */
+}
+.uiUx7{
+   background-image: url('/assets/img/myproject/uiux/7Acosta\ .png');
+   /* border-radius: 50%;   */
+}
+.uiUx8{
+   background-image: url('/assets/img/myproject/uiux/8dron.PNG');
+   /* border-radius: 50%;   */
+}
+.uiUx9{
+   background-image: url('/assets/img/myproject/uiux/9counsel.jpg');
+   /* border-radius: 50%;   */
+}
+.uiUx10{
+   background-image: url('/assets/img/myproject/uiux/STARTUPLY\ .webp');
+   /* border-radius: 50%;   */
+}
+.practic1{
+   background-image: url('/assets/img/myproject/practes/1.PNG');
+   /* border-radius: 50%;   */
+}
+/* .phonePars{
+  display: none;
+} */
+
+.my-card p{
+  display: none;
 }
 
 
 
+/* phone with css */
+
+
+.demo__phone {
+  position: relative;
+  width: 305.25px;
+  height: 633px;
+  padding-top: 1px;
+  background-color: #120d30;
+  border-radius: 40px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.demo__screen-wrapper {
+  position: relative;
+  height: 609px;
+  width: 281.25px;
+  margin-top: 11px;
+  margin-left: 12px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.demo__screen {
+  position: relative;
+  overflow: scroll;
+  height: 609px;
+  width: 290px;
+  padding-top: 25px;
+  background: #fff;
+  border-radius: 30px;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+}
+
+.demo__notch {
+  position: absolute;
+  top: 11px;
+  left: 74.25px;
+  height: 22.5px;
+  width: 156.75px;
+  background-color: #120d30;
+  border-radius: 0 0 15px 15px;
+}
+
+
+
+/* phone with css */
 /* contact */
 .contact{
   position: relative;
@@ -254,6 +419,9 @@ position: relative;
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
+}
+.havaproject{
+  font-size: 3.25rem !important;
 }
 .myEmail{
   font-size: 60px;
