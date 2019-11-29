@@ -187,7 +187,10 @@ position: relative;
   margin-left: 50px;
 }
 .about .aboutContent p{
-  color: #99a0af
+    color: #99a0af;
+    font-size: 73px;
+    font-size: 15px!important;
+    line-height: 30px;
 }
 .about .aboutContent h2{
   color: #c5d4f5
@@ -198,6 +201,19 @@ position: relative;
 
 .gitPtn{
   display: none;
+}
+.gitPtndicktop{
+    position: absolute;
+    right: 5px;
+    background: #3F3D56;
+    color: #fff;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 5px;  
+    margin: 20px;
+}
+.gitPtndicktop:hover{
+  color: #fff;
 }
 .myProject{
 height: 100vh;
@@ -421,7 +437,7 @@ margin: 200px 100px 0 100px;
   text-align: center;
 }
 .havaproject{
-  font-size: 3.25rem !important;
+  font-size: 3.25rem ;
 }
 .myEmail{
   font-size: 60px;
