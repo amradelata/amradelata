@@ -1,3 +1,113 @@
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #FFC107;
+  padding: 0 100px;
+  margin-top: 100px;
+}
+
+footer h2,
+footer a {
+  margin: 25px 0;
+  color: #31475e;
+
+}
+
+footer i {
+  font-size: 50px;
+  margin: 10px 20px;
+}
+
+footer .left {
+  float: left;
+}
+
+footer .right {
+  float: right;
+}
+
+.blogs {
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.blog {
+  flex-basis: calc(33.333% - 20px);
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+  margin: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.blog img {
+  width: 100%;
+  height: 300px;
+}
+
+.blog .content {
+  padding: 15px;
+  color: #120d30;
+}
+
+.blog .content h3 {
+
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 100;
+  height: 100px;
+
+}
+
+.blog .content button {
+  display: block;
+  cursor: pointer;
+}
+
+.singelBlog {
+  margin-top: 150px;
+
+}
+
+.singelBlog img {
+  /* height: 500px; */
+  background-image: url(../img/blog/1.jpg);
+  background-size: cover;
+}
+
+.singelBlog h6,
+.singelBlog p,
+.singelBlog h3 {
+  text-align: left;
+}
+
+.singelBlog h6 {
+  color: darkgrey;
+}
+
+.singelBlog h3 {
+  font-weight: 300;
+  font-size: 35px;
+  width: 80%;
+}
+
+.singelBlog p {
+  color: rgb(122, 122, 122);
+  white-space: pre-line;
+  line-height: 30px;
+}
+
+.singelBlog .content span {
+  float: left;
+}
+
 .button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -107,8 +217,41 @@ a:hover {
   font-size: .75rem !important
 }
 
+/* phone */
 @media screen and (max-width: 768px) {
+  footer a i {
+    font-size: 35px;
+    margin: 10px 0;
+  }
 
+  footer .left {
+    float: unset;
+    margin-bottom: 50px;
+  }
+
+  footer .right {
+    float: unset;
+  }
+
+  .blog {
+    flex-basis: calc(100% - 20px);
+  }
+
+  .singelBlog h6,
+  .singelBlog p,
+  .singelBlog h3,
+  .singelBlog .content span {
+    padding: 0 35px;
+  }
+
+  .singelBlog h3 {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .my-buttonsPhone {
+    display: none;
+  }
 
   .cards {
     margin-top: 50px
@@ -170,12 +313,49 @@ a:hover {
   }
 
   .my-buttons {
-    top: 40px !important;
-    right: 10px !important
+    display: none;
+  }
+
+  .disblay-block {
+    display: block;
+    transition: 50ms;
+
+  }
+
+  .my-buttonsPhone {
+    padding: 110px;
+    /* margin-top: 40px; */
+    background-color: #363636;
+    position: absolute;
+    top: 110px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .shap-4 {
+    top: 150px !important;
+  }
+
+  .my-buttonsPhone a,
+  .patreon-button,
+  .downloadCvBtn {
+    background-size: cover !important;
+    width: 200px !important;
+    margin: 20px 0;
+    font-size: 18px;
+  }
+
+  #phoneParsNave {
+    left: 350px;
+    top: 40px;
+    z-index: 1;
+    cursor: pointer;
   }
 
   .logo {
-    left: -40px !important
+    left: -20px !important
   }
 
   .whatIOffer {
@@ -376,9 +556,15 @@ a:hover {
   .demo__phone {
     display: none;
   }
+
+
 }
 
 @media screen and (min-width: 1408px) {
+  .my-buttonsPhone {
+    display: none;
+  }
+
   .demo__phone {
     display: none;
   }
@@ -391,6 +577,7 @@ a:hover {
   .phone {
     display: none
   }
+
 
   .is-size-1-fullhd {
     font-size: 3rem !important
@@ -426,8 +613,12 @@ a:hover {
 }
 
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .my-buttonsPhone {
+    display: none;
+  }
+
   .my-title {
-    font-size: 40px !important
+    font-size: 38px !important
   }
 
   .whatIOfferCardImg {
@@ -469,12 +660,12 @@ a:hover {
     display: inline-block !important;
     position: absolute;
     height: 770px;
-    top: 100px;
+    top: 80px;
     right: 0
   }
 
   .my-content {
-    padding: 150px 35px !important
+    padding: 150px 0 !important
   }
 }
 
@@ -724,7 +915,7 @@ body {
 .shap-4 {
   position: absolute;
   height: 1300px;
-  top: 90px;
+  top: 122px;
   right: 0
 }
 
